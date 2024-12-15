@@ -34,13 +34,13 @@ export const Light = createTheme({
             color: "#4f4f4f"
         },
         h1: {
-            color: "#296fcd"
+            color: "#000"
         },
         h2: {
-            color: "#296fcd"
+            color: "#000"
         },
         h3: {
-            color: "#296fcd"
+            color: "#000"
         },
         h5: {
             color: "#4f4f4f"
