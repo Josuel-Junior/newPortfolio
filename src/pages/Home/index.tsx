@@ -1,6 +1,7 @@
-import { Box, Container, Typography, useTheme } from "@mui/material";
+import { Box, Container, Divider, Typography, useTheme } from "@mui/material";
 
-import background from "../../assets/backgroundHome.png";
+import background from "../../assets/backgroundHome3.png";
+import photo from "../../assets/photo.jpg";
 
 export const Home: React.FC = () => {
   const theme = useTheme();
@@ -26,9 +27,62 @@ export const Home: React.FC = () => {
             backgroundRepeat: "no-repeat",
           }}
         />
-        <Container sx={{ background: "red", position: "absolute" }}>
-          <Box sx={{ width: "80%", height: "70vh", backgroundColor: "red" }}>
-            <p>teste</p>
+        <Container
+          sx={{
+            background: "#fff",
+            position: "absolute",
+            borderTopRightRadius: "20px",
+            borderTopLeftRadius: "20px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            padding: "20px",
+          }}
+        >
+          <Box sx={{ width: "80%", height: "70vh" }}>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                borderRadius: "8px",
+              }}
+            >
+              <Typography
+                variant="h1"
+                sx={{
+                  fontSize: {
+                    xl: 31,
+                    md: 30,
+                    sm: 30,
+                    xs: 25,
+                  },
+                }}
+              >
+                Josuel Junior Fonseca Carneiro
+              </Typography>
+              <Box
+                sx={{
+                  backgroundImage: `url(${photo})`,
+                  width: "120px",
+                  height: "120px",
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  borderRadius: "50%",
+                }}
+              />
+            </Box>
+            <Divider
+              sx={{
+                borderColor: "primary.dark",
+                borderWidth: "2px",
+                marginTop: "20px",
+              }}
+            />
+            <Box sx={{ background: "blue" }}>
+              <Typography>teste</Typography>
+            </Box>
           </Box>
         </Container>
       </Box>

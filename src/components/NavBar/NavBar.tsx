@@ -17,6 +17,7 @@ export const NavBar: React.FC = () => {
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   const hoverTextNavBar = {
+    
     transition: "all .3s",
     "&:hover": {
       color: "#000",
@@ -31,8 +32,9 @@ export const NavBar: React.FC = () => {
   return (
     <AppBar
       elevation={0}
+      
       sx={{
-        background: theme.palette.background.paper,
+      //  backgroundColor: 'rgba(255, 255, 255, 0.9)',
         display: "flex",
         justifyContent: "center",
         transition: "background 0.2s ease-in-out",
