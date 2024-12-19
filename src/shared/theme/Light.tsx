@@ -25,6 +25,13 @@ export const Light = createTheme({
 
     },
     typography: {
+        fontFamily: [
+            'Arial',
+            'sans-serif',
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+          ].join(','),
         subtitle1: {
             color: "#296fcd",
             fontSize: 19,
@@ -37,7 +44,8 @@ export const Light = createTheme({
             color: "#000"
         },
         h2: {
-            color: "#000"
+            color: "#000",
+           
         },
         h3: {
             color: "#000"
@@ -45,5 +53,7 @@ export const Light = createTheme({
         h5: {
             color: "#4f4f4f"
         }
-    }
+        
+    },
+    
 })

@@ -1,8 +1,7 @@
 import { Box, Container, Divider, Typography, useTheme } from "@mui/material";
-
 import background from "../../assets/backgroundHome3.png";
 import photo from "../../assets/photo.jpg";
-
+import PhoneIcon from "@mui/icons-material/Phone";
 export const Home: React.FC = () => {
   const theme = useTheme();
   return (
@@ -37,6 +36,8 @@ export const Home: React.FC = () => {
             flexDirection: "column",
             alignItems: "center",
             padding: "20px",
+            border: "2px solid rgba(0, 0, 0, 0.58)",
+            
           }}
         >
           <Box sx={{ width: "80%", height: "70vh" }}>
@@ -80,8 +81,39 @@ export const Home: React.FC = () => {
                 marginTop: "20px",
               }}
             />
-            <Box sx={{ background: "blue" }}>
-              <Typography>teste</Typography>
+            <Box sx={{ background: "" }}>
+              <Typography
+                variant="h2"
+                sx={{
+                  textAlign: "center",
+                  marginTop: "30px",
+                  fontSize: {
+                    xl: 40,
+                    md: 35,
+                    sm: 30,
+                    xs: 25,
+                  },
+                }}
+              >
+                Desenvolvedor Fullstack
+              </Typography>
+              <Typography
+                variant="h3"
+                sx={{
+                  textAlign: "left",
+                  marginTop: "30px",
+                  fontSize: {
+                    xl: 30,
+                    md: 25,
+                    sm: 20,
+                    xs: 22,
+                  },
+                  fontWeight: "",
+                }}
+              >
+                PERFIL:
+              </Typography>
+              <PhoneIcon fontSize="large" />
             </Box>
           </Box>
         </Container>
