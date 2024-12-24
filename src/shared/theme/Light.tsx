@@ -19,19 +19,20 @@ export const Light = createTheme({
             contrastText: "#ffffff",
         },
         background: {
-            default: "#f7f6f3",
+            default: "FFDBDE00",
             paper: "#ffffff",
         },
 
     },
     typography: {
         fontFamily: [
-            'Arial',
+            'Roboto',
             'sans-serif',
             '"Apple Color Emoji"',
             '"Segoe UI Emoji"',
             '"Segoe UI Symbol"',
           ].join(','),
+
         subtitle1: {
             color: "#296fcd",
             fontSize: 19,
@@ -41,9 +42,11 @@ export const Light = createTheme({
             color: "#4f4f4f"
         },
         h1: {
+            fontFamily:"Rubik",
             color: "#000"
         },
         h2: {
+            fontFamily:"Rubik",
             color: "#000",
            
         },

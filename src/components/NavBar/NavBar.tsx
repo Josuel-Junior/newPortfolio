@@ -32,17 +32,19 @@ export const NavBar: React.FC = () => {
   return (
     <AppBar
       elevation={0}
-      
       sx={{
       //  backgroundColor: 'rgba(255, 255, 255, 0.9)',
+      background:"transparent",
+       
         display: "flex",
         justifyContent: "center",
         transition: "background 0.2s ease-in-out",
+        
       }}
     >
       <Box sx={{ position: "absolute", marginLeft: "60px" }}>
         <Typography sx={{ fontWeight: "bold", color: "#000" }}>
-          Josuel Junior
+          J/J
         </Typography>
       </Box>
       {isMatch ? (
