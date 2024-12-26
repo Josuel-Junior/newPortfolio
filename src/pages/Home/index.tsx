@@ -1,114 +1,88 @@
-import {
-  Box,
-  Button,
-  Container,
-  Divider,
-  Grid2,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
-import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
-import background from "../../assets/home.png";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
 
-import photo from "../../assets/photo.jpg";
-import PhoneIcon from "@mui/icons-material/Phone";
+import background from "../../assets/teste3.png"; // Imagem importada
 
-import styles from "./styles.module.css";
-import { useRef } from "react";
-import { Height } from "@mui/icons-material";
-
-interface PageProps {
-  offset: number;
-  gradient: string;
-  onClick: () => void;
-}
-
-const Page = ({ offset, gradient, onClick }: PageProps) => (
-  <>
-    <ParallaxLayer offset={offset} speed={0.2} onClick={onClick}>
-      <Box
-        sx={{
-          width: "100vw",
-          height: "100vh",
-          background: "red",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <Typography
-          variant="h1"
-          sx={{
-            fontWeight: "600",
-            fontSize: {
-              xl: 31,
-              md: 30,
-              sm: 30,
-              xs: 25,
-            },
-            marginTop: "10px",
-          }}
-        >
-          Desenvolvedor Fullstack
-        </Typography>
-        <Typography
-          variant="h2"
-          sx={{
-            fontWeight: "600",
-
-            fontSize: {
-              xl: 31,
-              md: 30,
-              sm: 30,
-              xs: 25,
-            },
-          }}
-        >
-          Josuel Junior
-        </Typography>
-      </Box>
-    </ParallaxLayer>
-
-    <ParallaxLayer offset={offset} speed={0.6} onClick={onClick}>
-      <div className={`${styles.slopeEnd} ${styles[gradient]}`} />
-    </ParallaxLayer>
-
-    <ParallaxLayer
-      className={`${styles.text} ${styles.number}`}
-      offset={offset}
-      speed={0.3}
-    >
-      <span>0{offset + 1}</span>
-    </ParallaxLayer>
-  </>
-);
+import { Parallax, Pagination, Navigation } from "swiper/modules";
 
 export const Home: React.FC = () => {
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
-  const parallax = useRef<IParallax>(null);
-  const scroll = (to: number) => {
-    if (parallax.current) {
-      parallax.current.scrollTo(to);
-    }
-  };
   return (
-    <div style={{ background: "#dfdfdf" }}>
-      <Parallax
-        className={styles.container}
-        ref={parallax}
-        pages={3}
-        horizontal
+    <Box sx={{ width: "100vw", height: "100vh" }}>
+      <Swiper
+        speed={600}
+        parallax={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Parallax, Pagination, Navigation]}
+        className="mySwiper"
       >
-        <ParallaxLayer offset={0} speed={2.5} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Button onClick={()=>scroll(1)} sx={{background:"red"}}>
-            Mudar
-          </Button>
-        </ParallaxLayer>
-      </Parallax>
-    </div>
+        {/* Container de fundo parallax */}
+        <div
+          slot="container-start"
+          className="parallax-bg"
+          data-swiper-parallax="-23%" // Definindo a intensidade do movimento
+          style={{
+            backgroundImage: `url(${background})`,
+            backgroundSize: "cover", // Garantindo que a imagem cubra toda a área
+            backgroundPosition: "center", // Centralizando a imagem
+            backgroundAttachment: "fixed", // Fixando o fundo para efeito parallax
+            width: "200vw", // Ocupa toda a largura da tela
+            height: "100vh", // Garantindo que o fundo tenha altura maior que a tela
+            position: "absolute", // Precisamos que o fundo seja absoluto para o efeito parallax
+            top: 0,
+            left: 0,
+            zIndex: -1, // Garantindo que o fundo fique atrás do conteúdo
+          }}
+        ></div>
+
+        {/* Slides do Swiper */}
+        <SwiperSlide>
+          <Box sx={{ height: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            <div className="title" data-swiper-parallax="-300">
+              Slide 1
+            </div>
+            <div className="subtitle" data-swiper-parallax="-200">
+              Subtitle
+            </div>
+            <div className="text" data-swiper-parallax="-100">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec...
+              </p>
+            </div>
+          </Box>
+        </SwiperSlide>
+
+        {/* Outros slides */}
+        <SwiperSlide>
+          <div className="title" data-swiper-parallax="-300">
+            Slide 2
+          </div>
+          <div className="subtitle" data-swiper-parallax="-200">
+            Subtitle
+          </div>
+          <div className="text" data-swiper-parallax="-100">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="title" data-swiper-parallax="-300">
+            Slide 3
+          </div>
+          <div className="subtitle" data-swiper-parallax="-200">
+            Subtitle
+          </div>
+          <div className="text" data-swiper-parallax="-100">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </Box>
   );
 };

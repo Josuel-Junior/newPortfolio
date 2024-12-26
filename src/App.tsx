@@ -8,7 +8,7 @@ function App() {
   return (
     <ThemeProvider theme={Light}>
       <CssBaseline />
-      <NavBar />
+      {/* <NavBar /> */}
       <Outlet />
     </ThemeProvider>
   );
