@@ -17,16 +17,17 @@ export const NavBar: React.FC = () => {
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   const hoverTextNavBar = {
-    
+    color:"#Fff",
     transition: "all .3s",
     "&:hover": {
-      color: "#000",
+      color: "#ddd",
       background: theme.palette.background.default,
     },
     fontFamily: "Arial, sans-serif",
     fontWeight: "bold",
     textTransform: "inherit",
     fontSize: "18px",
+    
   };
 
   return (
@@ -43,7 +44,7 @@ export const NavBar: React.FC = () => {
       }}
     >
       <Box sx={{ position: "absolute", marginLeft: "60px" }}>
-        <Typography sx={{ fontWeight: "bold", color: "#000" }}>
+        <Typography sx={{ fontWeight: "bold", color: "#fff" }}>
           J/J
         </Typography>
       </Box>
