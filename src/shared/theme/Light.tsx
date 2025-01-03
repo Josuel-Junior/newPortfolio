@@ -33,6 +33,10 @@ export const Light = createTheme({
       color: "#fff",
       fontFamily: ["Epilogue", "sans-serif"].join(),
     },
+    subtitle2: {
+      color: "#fff",
+      fontFamily: ["Epilogue", "sans-serif"].join(),
+    },
     body1: {
       fontSize: 19,
       color: "#4f4f4f",

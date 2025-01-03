@@ -5,6 +5,7 @@ import {
 } from "@mui/material";
 import { SectionInitial } from "../SectionInitial/SectionInitial";
 import { SectionCloud } from "../AboutCloud/SectionCloud";
+import { AboutMe } from "../AboutMe/AboutMe";
 
 export const Home: React.FC = () => {
   const theme = useTheme();
@@ -28,6 +29,7 @@ export const Home: React.FC = () => {
         />
       </Box>
       <SectionCloud />
+      <AboutMe/>
     </Box>
   );
 };
