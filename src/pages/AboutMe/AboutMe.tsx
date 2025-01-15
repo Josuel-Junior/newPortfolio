@@ -1,6 +1,8 @@
 import { Box, Container, Grid2, Typography } from "@mui/material";
 import React from "react";
 import { Slide } from "react-awesome-reveal";
+import { CustomList } from "../../shared/components/CustomList";
+import { listTechnologies } from "../../shared/utils/constants/listTechnologies";
 
 export const AboutMe: React.FC = () => {
   return (
@@ -79,6 +81,9 @@ export const AboutMe: React.FC = () => {
                 </li>
                 <li>Bancos de dado: MySQL, PostgreSQL, Amazon RDS.</li>
               </ul>
+              <CustomList text={listTechnologies}>
+
+              </CustomList>
             </Slide>
           </Grid2>
           <Grid2 size={{ xs: 12, md: 6 }}>
