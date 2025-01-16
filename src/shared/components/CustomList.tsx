@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import React from "react";
 
 interface ICustomList {
-  title: String;
+  title: string;
   description: string;
 }
 
@@ -12,20 +12,17 @@ interface IList {
 
 export const CustomList: React.FC<IList> = ({ text }) => {
   return (
-    <>
-      <Box>
-        {text.map((data: ICustomList, id: React.Key) => {
-            const idNumber = Number(id)
-          return (
-            <ul key={idNumber}>
-              <li>
-                <span>{data.title}: </span>
-                {data.description}
-              </li>
-            </ul>
-          );
-        })}
-      </Box>
-    </>
+    <Box>
+      {text.map((data: ICustomList, id: React.Key) => {
+        return (
+          <ul key={id}>
+            <li>
+              <span style={{ fontWeight:"bold" }}>{data.title} </span>
+              {data.description}
+            </li>
+          </ul>
+        );
+      })}
+    </Box>
   );
 };

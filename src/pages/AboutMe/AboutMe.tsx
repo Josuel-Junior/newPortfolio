@@ -2,7 +2,8 @@ import { Box, Container, Grid2, Typography } from "@mui/material";
 import React from "react";
 import { Slide } from "react-awesome-reveal";
 import { CustomList } from "../../shared/components/CustomList";
-import { listTechnologies } from "../../shared/utils/constants/listTechnologies";
+import { listBackEnd } from "../../shared/utils/constants/listTechnologies";
+import { listFrontEnd } from "../../shared/utils/constants/listTechnologies";
 
 export const AboutMe: React.FC = () => {
   return (
@@ -60,30 +61,12 @@ export const AboutMe: React.FC = () => {
 
                     xs: 25,
                   },
-                  color:"#007AFF"
+                  color: "#007AFF",
                 }}
               >
                 Back-End
               </Typography>
-              <ul>
-                <li>
-                  <span style={{ color: "#007AFF" }}>Frameworks:</span> Spring
-                  boot.
-                </li>
-                <li>Linguagem: Java.</li>
-                <li>
-                  Serviços AWS: EC2, Lambda, Elastic Container Services, S3,
-                  RDS, API Gateway e Lex.{" "}
-                </li>
-                <li>
-                  Ferramentas: Maven, Docker, JPA, Hipernate, InteliiJ e Visual
-                  Studio.
-                </li>
-                <li>Bancos de dado: MySQL, PostgreSQL, Amazon RDS.</li>
-              </ul>
-              <CustomList text={listTechnologies}>
-
-              </CustomList>
+              <CustomList text={listBackEnd} />
             </Slide>
           </Grid2>
           <Grid2 size={{ xs: 12, md: 6 }}>
@@ -97,25 +80,12 @@ export const AboutMe: React.FC = () => {
                     xl: 35,
                     xs: 25,
                   },
-                  color:"yellow"
+                  color: "#ffea00",
                 }}
               >
                 Front-End
               </Typography>
-              <ul>
-                <li>
-                  <span style={{ color: "yellow" }}>Frameworks:</span> React,
-                  React Native e NextJS.
-                </li>
-                <li>
-                <span style={{ color: "yellow" }}>Linguagem:</span> Javascript, Typescript e Assincronismo.</li>
-                <li>
-                  Bibliotecas e Tecnologias: DatoCMS, GraphQL, TanSrack Query,
-                  React router, Context API, React Hook Form e Zod.
-                </li>
-                <li>Estilização: CSS, Material-UI, Bootstrap e Sass.</li>
-                <li>Design: Responsividade, UI/UX e SEO.</li>
-              </ul>
+              <CustomList text={listFrontEnd} />
             </Slide>
           </Grid2>
         </Grid2>
