@@ -17,7 +17,7 @@ export const CustomList: React.FC<IList> = ({ text }) => {
         return (
           <ul key={id}>
             <li>
-              <span style={{ fontWeight:"bold" }}>{data.title} </span>
+              <span style={{ fontWeight: "bold" }}>{data.title} </span>
               {data.description}
             </li>
           </ul>

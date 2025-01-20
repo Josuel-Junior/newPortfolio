@@ -16,6 +16,10 @@ export const listBackEnd = [
     description: "JVM, OOP, Design Patterns e UML.",
   },
   {
+    title: "Testes e documentação:",
+    description: "Mockito, JUnit e Swagger",
+  },
+  {
     title: "Serviços AWS:",
     description:
       "EC2, Lambda, Elastic Container Services, S3, RDS, API Gateway e Lex.",

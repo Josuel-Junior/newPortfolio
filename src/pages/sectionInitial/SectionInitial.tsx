@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Fade } from "react-awesome-reveal";
 
-import background from "../../assets/background.png";
+import background from "../../assets/background2.png";
 
 import { Parallax, Pagination, Navigation } from "swiper/modules";
 
