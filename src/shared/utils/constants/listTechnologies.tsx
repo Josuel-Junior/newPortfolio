@@ -16,8 +16,8 @@ export const listBackEnd = [
     description: "JVM, OOP, Design Patterns e UML.",
   },
   {
-    title: "Testes e documentação:",
-    description: "Mockito, JUnit e Swagger",
+    title: "Testes e Documentação:",
+    description: "Mockito, JUnit e Swagger.",
   },
   {
     title: "Serviços AWS:",

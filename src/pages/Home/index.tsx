@@ -6,6 +6,7 @@ import {
 import { SectionInitial } from "../SectionInitial/SectionInitial";
 import { SectionCloud } from "../AboutCloud/SectionCloud";
 import { AboutMe } from "../AboutMe/AboutMe";
+import { Projects } from "../Projects/SectionProjects";
 
 export const Home: React.FC = () => {
   const theme = useTheme();
@@ -22,7 +23,7 @@ export const Home: React.FC = () => {
             "Sou desenvolvedor Full Stack com foco em back-end, especializado em Java, Spring Boot e serviços de computação em nuvem da AWS."
           }
           actionButton={Scroll}
-          titleSecondScreen={"Cloud"}
+          titleSecondScreen={"Docker"}
           subTitleSecondScreen={
             "Com certificação AWS Cloud Practitioner, possuo conhecimento em serviços essenciais para o desenvolvimento com Cloud."
           }
@@ -30,6 +31,7 @@ export const Home: React.FC = () => {
       </Box>
       <SectionCloud />
       <AboutMe/>
+      <Projects/>
     </Box>
   );
 };
