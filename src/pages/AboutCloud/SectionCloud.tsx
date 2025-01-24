@@ -19,7 +19,7 @@ export const SectionCloud: React.FC = () => {
         <Grid2 container maxWidth={"md"} spacing={5}>
           <Grid2 size={{ xs: 12, md: 6 }} sx={{ alignContent: "center" }}>
             <Slide direction="left">
-              <Typography variant="h3" sx={{ fontWeight: "600" }}>
+              <Typography variant="h2" sx={{ fontWeight: "600", color:"#000" }}>
                 Conhecimento Cloud
               </Typography>
               <Typography sx={{ mt: "10px" }}>

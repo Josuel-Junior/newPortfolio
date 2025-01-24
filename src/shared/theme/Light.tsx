@@ -46,16 +46,19 @@ export const Light = createTheme({
       color: "#fff",
     },
     h2: {
+      color: "#000",
       fontFamily: ["Rubik", "sans-serif"].join(),
-      color: "#fff",
-      fontSize: "45px",
-      
+      fontSize: "25px",
+      [`@media (min-width:600px)`]: {
+        fontSize: "28px",
+      },
       [`@media (min-width:960px)`]: {
-        fontSize: "47px",
+        fontSize: "30px",
       },
       [`@media (min-width:1280px)`]: {
-        fontSize: "50px",
+        fontSize: "35px",
       },
+      // color: "#ddd",
     },
     h3: {
       color: "#000",

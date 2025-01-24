@@ -141,12 +141,7 @@ export const SectionInitial: React.FC<IPops> = ({
                 variant="h2"
                 sx={{
                   fontWeight: "600",
-                  fontSize: {
-                    xl: 40,
-                    md: 35,
-                    sm: 33,
-                    xs: 29,
-                  },
+                  color:"#fff"
                 }}
               >
                 {titleSecondScreen}

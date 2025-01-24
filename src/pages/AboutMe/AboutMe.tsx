@@ -20,7 +20,7 @@ export const AboutMe: React.FC = () => {
     >
       <Container sx={{ my: "10px" }} maxWidth="md">
         <Slide direction="left">
-          <Typography variant="h2">Sobre Mim</Typography>
+          <Typography variant="h2" sx={{fontWeight:"600", color:"#fff"}}>Sobre Mim</Typography>
 
           <Typography
             variant="subtitle2"
