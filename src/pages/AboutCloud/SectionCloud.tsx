@@ -6,20 +6,23 @@ export const SectionCloud: React.FC = () => {
   return (
     <Box
       sx={{
-        width: "100vw",
-        height: "100vh",
+        minWidth: "100vw",
+        minHeight: "100vh",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
       <Container
-        sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+        sx={{ display: "flex", alignItems: "center", justifyContent: "center",my:"10px" }}
       >
         <Grid2 container maxWidth={"md"} spacing={5}>
           <Grid2 size={{ xs: 12, md: 6 }} sx={{ alignContent: "center" }}>
             <Slide direction="left">
-              <Typography variant="h2" sx={{ fontWeight: "600", color:"#000" }}>
+              <Typography
+                variant="h2"
+                sx={{ fontWeight: "600", color: "#000" }}
+              >
                 Conhecimento Cloud
               </Typography>
               <Typography sx={{ mt: "10px" }}>
@@ -33,15 +36,27 @@ export const SectionCloud: React.FC = () => {
                 , que marcou meu primeiro passo no universo de serviços em
                 nuvem. Desde então, continuo explorando e testando diversos
                 serviços da AWS, como
-                <span style={{ fontWeight: "600", color: "#ff9913" }}> EC2</span>
-                ,<span style={{ fontWeight: "600", color: "#ff9913" }}> S3</span>
+                <span style={{ fontWeight: "600", color: "#ff9913" }}>
+                  {" "}
+                  EC2
+                </span>
                 ,
-                <span style={{ fontWeight: "600", color: "#ff9913" }}> LAMBDA</span>
+                <span style={{ fontWeight: "600", color: "#ff9913" }}> S3</span>
                 ,
-                <span style={{ fontWeight: "600", color: "#ff9913" }}> RDS</span>
+                <span style={{ fontWeight: "600", color: "#ff9913" }}>
+                  {" "}
+                  LAMBDA
+                </span>
+                ,
+                <span style={{ fontWeight: "600", color: "#ff9913" }}>
+                  {" "}
+                  RDS
+                </span>
                 , entre outros. Meu próximo objetivo é me preparar e realizar o
-                exame para obter a certificação 
-                <span style={{ fontWeight: "600", color: "#ff9913" }}> AWS Certified Solutions Architect – Associate.
+                exame para obter a certificação
+                <span style={{ fontWeight: "600", color: "#ff9913" }}>
+                  {" "}
+                  AWS Certified Solutions Architect – Associate.
                 </span>
               </Typography>
             </Slide>

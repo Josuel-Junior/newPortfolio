@@ -8,9 +8,7 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Fade } from "react-awesome-reveal";
-
 import background from "../../assets/background2.png";
-
 import { Parallax, Pagination, Navigation } from "swiper/modules";
 
 interface IPops {
@@ -106,7 +104,6 @@ export const SectionInitial: React.FC<IPops> = ({
                 {subTitle}
               </Typography>
             </Fade>
-
             <Button
               onClick={actionButton}
               sx={{
@@ -141,7 +138,7 @@ export const SectionInitial: React.FC<IPops> = ({
                 variant="h2"
                 sx={{
                   fontWeight: "600",
-                  color:"#fff"
+                  color: "#fff",
                 }}
               >
                 {titleSecondScreen}
