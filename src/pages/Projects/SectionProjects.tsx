@@ -6,6 +6,7 @@ import {
   CardActions,
   CardContent,
   CardMedia,
+  Container,
   Grid2,
   Typography,
 } from "@mui/material";
@@ -39,7 +40,7 @@ export const Projects: React.FC = () => {
         flexDirection: "column",
       }}
     >
-      <Box textAlign={"center"} my={2} maxWidth="lg">
+      <Container>
         <Fade>
           <Typography variant="h2" sx={{ my: "20px", fontWeight: "600" }}>
             Projetos
@@ -53,7 +54,7 @@ export const Projects: React.FC = () => {
             atque nemo?
           </Typography>
         </Fade>
-      </Box>
+      </Container>
       <ShowProjects dataProjects={listProjects} />
     </Box>
   );

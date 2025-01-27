@@ -2,7 +2,8 @@ import { ThemeProvider } from "@emotion/react";
 import { Outlet } from "react-router-dom";
 import { Light } from "./shared/theme/Light";
 import { CssBaseline } from "@mui/material";
-import { NavBar } from "./components/NavBar/NavBar";
+import { NavBar } from "./shared/components/NavBar";
+
 
 function App() {
   return (
