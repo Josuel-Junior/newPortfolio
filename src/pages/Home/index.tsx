@@ -7,6 +7,7 @@ import { SectionInitial } from "../SectionInitial/SectionInitial";
 import { SectionCloud } from "../AboutCloud/SectionCloud";
 import { AboutMe } from "../AboutMe/AboutMe";
 import { Projects } from "../Projects/SectionProjects";
+import { Contact } from "../Contact/Contact";
 
 export const Home: React.FC = () => {
   const theme = useTheme();
@@ -32,6 +33,7 @@ export const Home: React.FC = () => {
       <SectionCloud />
       <AboutMe/>
       <Projects/>
+      <Contact/>
     </Box>
   );
 };
