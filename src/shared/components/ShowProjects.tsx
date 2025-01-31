@@ -29,7 +29,7 @@ export const ShowProjects: React.FC<IProps> = ({ dataProjects }) => {
     <Grid2
       container
       maxWidth="lg"
-      sx={{ background: "", width: "100%" }}
+      sx={{ my:"20px", width: "100%" }}
       spacing={4}
     >
       {dataProjects.map((data) => {

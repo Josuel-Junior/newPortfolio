@@ -1,8 +1,22 @@
-import { Box, Button, Grid2, Typography, IconButton } from "@mui/material";
+import {
+  Box,
+  Button,
+  Grid2,
+  Typography,
+  IconButton,
+  Container,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 
+import PhoneIcon from "@mui/icons-material/Phone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export const Contact: React.FC = () => {
+  const theme = useTheme();
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Box
       sx={{
@@ -14,22 +28,108 @@ export const Contact: React.FC = () => {
         justifyContent: "center",
       }}
     >
-      <Grid2 container spacing={5} sx={{ background: "red" }} maxWidth="md">
-        <Grid2 size={6}>
-          <Typography>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            incidunt praesentium cum sit recusandae. Consequuntur mollitia iusto
-            incidunt. Ut nulla aut officiis explicabo fugit illo qui quia
-            obcaecati nobis provident.
-          </Typography>
-        </Grid2>
-        <Grid2 size={6} sx={{ background: "blue" }}>
-          <Typography></Typography>
-         
-          <IconButton aria-label="Example">
-            <LinkedInIcon sx={{fontSize:"70px"}}/>
-          </IconButton>
-        </Grid2>
+      <Grid2 maxWidth="md">
+        <Container>
+          <Grid2
+            size={12}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: isMatch ? "column" : "flex",
+              justifyContent: "space-evenly",
+            }}
+          >
+            <IconButton
+              aria-label="Example"
+              sx={{
+                "&:hover": {
+                  transform: "scale(1.1)",
+                },
+                transition: "all 0.3s ease-in-out",
+              }}
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/josuel-junior-433467266",
+                  "_blank"
+                )
+              }
+            >
+              <LinkedInIcon
+                sx={{ fontSize: "55px", mr: "6px", color: "#fff" }}
+              />
+              <Typography variant="body2">Linkedin</Typography>
+            </IconButton>
+            <IconButton
+              aria-label="Example"
+              sx={{
+                "&:hover": {
+                  transform: "scale(1.1)",
+                },
+                transition: "all 0.3s ease-in-out",
+              }}
+              onClick={() => (window.location.href = "tel:+5535999007141")}
+            >
+              <PhoneIcon sx={{ fontSize: "55px", mr: "6px", color: "#fff" }} />
+              <Typography variant="body2">Telefone</Typography>
+            </IconButton>
+            <IconButton
+              aria-label="Example"
+              sx={{
+                "&:hover": {
+                  transform: "scale(1.1)",
+                },
+                transition: "all 0.3s ease-in-out",
+              }}
+              onClick={() =>
+                window.open("https://wa.me/5535999007141", "_blank")
+              }
+            >
+              <WhatsAppIcon
+                sx={{ fontSize: "55px", mr: "6px", color: "#fff" }}
+              />
+              <Typography variant="body2" sx={{}}>
+                Whatsapp
+              </Typography>
+            </IconButton>
+          </Grid2>
+          <Grid2
+            size={12}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "end",
+            }}
+          >
+            <Typography variant="body2" sx={{ my: "15px" }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              incidunt praesentium cum sit recusandae. Consequuntur mollitia
+              iusto incidunt. Ut nulla aut officiis explicabo fugit illo qui
+              quia obcaecati nobis provident. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Esse optio nisi officiis libero quam
+              commodi porro consequatur. Quisquam ipsa inventore soluta,
+              excepturi quis distinctio tempore enim optio eos. Saepe, quia?
+            </Typography>
+
+            <Grid2 size={6} sx={{ background: "" }}>
+              <Button
+                sx={{
+                  padding: "15px",
+                  background: "white",
+                  fontFamily: "Rubik",
+                  backgroundColor: "rgb(255, 255, 255)",
+                  boxShadow: "rgb(255, 255, 255) 0px 0px 6px 0px",
+                  color: "rgb(0, 12, 42)",
+                  transition: "box-shadow 300ms ease-in-out",
+                  "&:hover": {
+                    boxShadow: "0 0 8px 5px rgba(255, 255, 255, 0.6)",
+                  },
+                }}
+              >
+                Curriculum
+              </Button>
+            </Grid2>
+          </Grid2>
+        </Container>
       </Grid2>
     </Box>
   );
