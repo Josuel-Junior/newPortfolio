@@ -9,6 +9,7 @@ import {
     Tab,
   } from "@mui/material";
   import { useNavigate } from "react-router-dom";
+import usePosition from "../utils/functions/usePosition";
   
   export const NavBar: React.FC = () => {
     const navigate = useNavigate();
@@ -16,12 +17,14 @@ import {
   
     const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   
+    const isTop = usePosition();
+
     const hoverTextNavBar = {
-      color:"#Fff",
+      color:isTop ? "#Fff":"#000",
       transition: "all .3s",
       "&:hover": {
-        color: "#ddd",
-        background: theme.palette.background.default,
+        color: isTop ? "#ddd" : "#616161",
+       
       },
       fontFamily: "Arial, sans-serif",
       fontWeight: "bold",
@@ -32,10 +35,12 @@ import {
   
     return (
       <AppBar
-        elevation={0}
+      elevation={isTop ? 0 : 4}
         sx={{
-        //  backgroundColor: 'rgba(255, 255, 255, 0.9)',
-        background:"transparent",
+        background:
+        isTop == true
+          ? `transparent`
+          : `${theme.palette.background.paper}`,
          
           display: "flex",
           justifyContent: "center",
@@ -44,7 +49,7 @@ import {
         }}
       >
         <Box sx={{ position: "absolute", marginLeft: "60px" }}>
-          <Typography sx={{ fontWeight: "bold", color: "#fff", fontFamily:"Epilogue" }}>
+          <Typography sx={{ fontWeight: "bold", color: isTop ? "#fff" : "#000", fontFamily:"Epilogue" }}>
             Josuel Junior
           </Typography>
         </Box>
