@@ -1,8 +1,4 @@
-import {
-  Box,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { SectionInitial } from "../SectionInitial/SectionInitial";
 import { SectionCloud } from "../AboutCloud/SectionCloud";
 import { AboutMe } from "../AboutMe/AboutMe";
@@ -10,13 +6,11 @@ import { Projects } from "../Projects/SectionProjects";
 import { Contact } from "../Contact/Contact";
 
 export const Home: React.FC = () => {
-  const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   const Scroll = () => {};
 
   return (
-    <Box>
+    <Box id="home">
       <Box sx={{ width: "100vw", height: "100vh" }}>
         <SectionInitial
           title={"Josuel Junior"}
@@ -31,9 +25,9 @@ export const Home: React.FC = () => {
         />
       </Box>
       <SectionCloud />
-      <AboutMe/>
-      <Projects/>
-      <Contact/>
+      <AboutMe />
+      <Projects />
+      <Contact />
     </Box>
   );
 };

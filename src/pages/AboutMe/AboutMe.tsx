@@ -8,6 +8,7 @@ import { listFrontEnd } from "../../shared/utils/constants/listTechnologies";
 export const AboutMe: React.FC = () => {
   return (
     <Box
+      id="aboutMe"
       sx={{
         minHeight: "80vh",
         width: "100vw",
@@ -20,7 +21,9 @@ export const AboutMe: React.FC = () => {
     >
       <Container sx={{ my: "10px" }} maxWidth="md">
         <Slide direction="left">
-          <Typography variant="h2" sx={{fontWeight:"600", color:"#fff"}}>Sobre Mim</Typography>
+          <Typography variant="h2" sx={{ fontWeight: "600", color: "#fff" }}>
+            Sobre Mim
+          </Typography>
 
           <Typography
             variant="subtitle2"

@@ -1,39 +1,22 @@
 import { Height } from "@mui/icons-material";
 import {
   Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
   Container,
-  Grid2,
   Typography,
 } from "@mui/material";
 
-import GitHubIcon from "@mui/icons-material/GitHub";
-
-import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
-
-import banner from "../../assets/banner.png";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade} from "react-awesome-reveal";
 import { ShowProjects } from "../../shared/components/ShowProjects";
 import { listProjects } from "../../shared/utils/constants/listProjects";
 
-// interface IProps {
-//   image: string;
-//   title: string;
-//   description: string;
-//   gitHub: string;
-// }
 
 export const Projects: React.FC = () => {
   return (
     <Box
+      id="projects"
       sx={{
         minHeight: "100vh",
         minWidth: "100vw",
-        background: "",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-evenly",

@@ -5,6 +5,7 @@ import { Slide } from "react-awesome-reveal";
 export const SectionCloud: React.FC = () => {
   return (
     <Box
+      id="cloud"
       sx={{
         minWidth: "100vw",
         minHeight: "100vh",
@@ -14,7 +15,12 @@ export const SectionCloud: React.FC = () => {
       }}
     >
       <Container
-        sx={{ display: "flex", alignItems: "center", justifyContent: "center",my:"10px" }}
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          my: "10px",
+        }}
       >
         <Grid2 container maxWidth={"md"} spacing={5}>
           <Grid2 size={{ xs: 12, md: 6 }} sx={{ alignContent: "center" }}>

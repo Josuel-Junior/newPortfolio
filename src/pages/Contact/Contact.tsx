@@ -21,6 +21,7 @@ export const Contact: React.FC = () => {
 
   return (
     <Box
+    id="contact"
       sx={{
         width: "100vw",
         height: "100vh",
