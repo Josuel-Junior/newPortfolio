@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { Light } from "./shared/theme/Light";
 import { CssBaseline } from "@mui/material";
 import { NavBar } from "./shared/components/NavBar";
+import { Footer } from "./shared/components/Footer";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <CssBaseline />
       <NavBar />
       <Outlet />
+      <Footer/>
     </ThemeProvider>
   );
 }

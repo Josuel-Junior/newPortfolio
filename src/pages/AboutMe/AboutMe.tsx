@@ -28,12 +28,6 @@ export const AboutMe: React.FC = () => {
           <Typography
             variant="subtitle2"
             sx={{
-              fontSize: {
-                xl: 18,
-                md: 15,
-                sm: 13,
-                xs: 12,
-              },
               mb: "20px",
               mt: "5px",
             }}
