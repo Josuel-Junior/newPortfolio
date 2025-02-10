@@ -12,6 +12,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
 import { Slide } from "react-awesome-reveal";
 
+
 interface dataProjects {
   title: string;
   description: string;
@@ -29,12 +30,12 @@ export const ShowProjects: React.FC<IProps> = ({ dataProjects }) => {
     <Grid2
       container
       maxWidth="lg"
-      sx={{ my:"20px", width: "100%" }}
+      sx={{ my: "20px", width: "100%" }}
       spacing={4}
     >
-      {dataProjects.map((data) => {
+      {dataProjects.map((data, key) => {
         return (
-          <Grid2 size={{ xs: 12, md: 4 }} sx={{ background: "" }}>
+          <Grid2 size={{ xs: 12, md: 4 }} key={key}>
             <Slide>
               <Card
                 elevation={10}
@@ -59,7 +60,6 @@ export const ShowProjects: React.FC<IProps> = ({ dataProjects }) => {
                 </CardContent>
                 <CardActions>
                   <Button size="small" href={data.gitHub}>
-                    {" "}
                     <GitHubIcon sx={{ mr: "5px" }} />
                     Github
                   </Button>

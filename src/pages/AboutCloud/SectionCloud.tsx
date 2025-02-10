@@ -40,7 +40,7 @@ export const SectionCloud: React.FC = () => {
                   AWS Cloud Practitioner
                 </span>
                 , que marcou meu primeiro passo no universo de serviços em
-                nuvem. Desde então, continuo explorando e testando diversos
+                nuvem. Desde então, tenho explorado e testando diversos
                 serviços da AWS, como
                 <span style={{ fontWeight: "600", color: "#ff9913" }}>
                   {" "}
@@ -58,8 +58,7 @@ export const SectionCloud: React.FC = () => {
                   {" "}
                   RDS
                 </span>
-                , entre outros. Meu próximo objetivo é me preparar e realizar o
-                exame para obter a certificação
+                , entre outros enquanto me preparo para o exame
                 <span style={{ fontWeight: "600", color: "#ff9913" }}>
                   {" "}
                   AWS Certified Solutions Architect – Associate.
