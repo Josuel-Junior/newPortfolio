@@ -1,10 +1,4 @@
-import {
-  Button,
-  Container,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { Button, Container, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Fade } from "react-awesome-reveal";
@@ -26,8 +20,6 @@ export const SectionInitial: React.FC<IPops> = ({
   titleSecondScreen,
   subTitleSecondScreen,
 }) => {
-  const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <>
       <Swiper

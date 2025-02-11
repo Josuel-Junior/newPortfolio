@@ -77,7 +77,6 @@ export const Light = createTheme({
       [`@media (min-width:1280px)`]: {
         fontSize: "35px",
       },
-      // color: "#ddd",
     },
     h5: {
       color: "#4f4f4f",

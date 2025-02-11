@@ -1,4 +1,4 @@
-import { Box, useMediaQuery, useTheme } from "@mui/material";
+import { Box } from "@mui/material";
 import { SectionInitial } from "../SectionInitial/SectionInitial";
 import { SectionCloud } from "../AboutCloud/SectionCloud";
 import { AboutMe } from "../AboutMe/AboutMe";
@@ -6,7 +6,6 @@ import { Projects } from "../Projects/SectionProjects";
 import { Contact } from "../Contact/Contact";
 
 export const Home: React.FC = () => {
-
   const Scroll = () => {};
 
   return (

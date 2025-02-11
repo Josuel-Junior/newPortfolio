@@ -1,6 +1,4 @@
-import { Height } from "@mui/icons-material";
 import { Box, Container, Typography } from "@mui/material";
-
 import { Fade } from "react-awesome-reveal";
 import { ShowProjects } from "../../shared/components/ShowProjects";
 import { listProjects } from "../../shared/utils/constants/listProjects";

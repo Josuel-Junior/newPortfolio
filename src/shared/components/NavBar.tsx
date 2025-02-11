@@ -8,17 +8,36 @@ import {
   Tabs,
   Tab,
 } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 import usePosition from "../utils/functions/usePosition";
 import { DrawerComponent } from "./DrawerComponent";
+import { navigateDrawer } from "../utils/constants/listMenu";
+
+interface navigateDrawer {
+  page: string;
+  iconPage: string;
+  navigate: string;
+}
 
 export const NavBar: React.FC = () => {
-  const navigate = useNavigate();
   const theme = useTheme();
 
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   const isTop = usePosition();
+
+  const handleScroll = (indicePage: string) => {
+    const element = document.getElementById(indicePage);
+    if (element) {
+      const offset = 50;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const hoverTextNavBar = {
     color: isTop ? "#Fff" : "#000",
@@ -62,31 +81,13 @@ export const NavBar: React.FC = () => {
       ) : (
         <Toolbar>
           <Tabs sx={{ marginLeft: "auto" }}>
-            <Tab
-              label="Home"
-              onClick={() => navigate("/")}
-              sx={hoverTextNavBar}
-            />
-            <Tab
-              sx={hoverTextNavBar}
-              label="Cloud"
-              onClick={() => navigate("/")}
-            />
-            <Tab
-              sx={hoverTextNavBar}
-              label="Sobre mim"
-              onClick={() => navigate("/")}
-            />
-            <Tab
-              sx={hoverTextNavBar}
-              label="Projetos"
-              onClick={() => navigate("/")}
-            />
-            <Tab
-              sx={hoverTextNavBar}
-              label="Contato"
-              onClick={() => navigate("/")}
-            />
+            {navigateDrawer.map((itensMenu: navigateDrawer, index: number) => (
+              <Tab
+                label={itensMenu.page}
+                onClick={() => handleScroll(itensMenu.navigate)}
+                sx={hoverTextNavBar}
+              />
+            ))}
           </Tabs>
         </Toolbar>
       )}
