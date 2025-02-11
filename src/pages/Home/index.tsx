@@ -20,7 +20,7 @@ export const Home: React.FC = () => {
           actionButton={Scroll}
           titleSecondScreen={"Docker"}
           subTitleSecondScreen={
-            "Com certificação AWS Cloud Practitioner, possuo conhecimento em serviços essenciais para o desenvolvimento com Cloud."
+            "Utilizo Docker para containerizar aplicações, garantindo portabilidade, escalabilidade e eficiência no desenvolvimento e deployment de sistemas."
           }
         />
       </Box>

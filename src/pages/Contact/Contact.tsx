@@ -21,7 +21,7 @@ export const Contact: React.FC = () => {
 
   return (
     <Box
-    id="contact"
+      id="contact"
       sx={{
         width: "100vw",
         height: "100vh",
@@ -109,13 +109,10 @@ export const Contact: React.FC = () => {
               }}
             >
               <Typography variant="body2" sx={{ my: "15px" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                incidunt praesentium cum sit recusandae. Consequuntur mollitia
-                iusto incidunt. Ut nulla aut officiis explicabo fugit illo qui
-                quia obcaecati nobis provident. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Esse optio nisi officiis libero
-                quam commodi porro consequatur. Quisquam ipsa inventore soluta,
-                excepturi quis distinctio tempore enim optio eos. Saepe, quia?
+                Se você está em busca de um desenvolvedor comprometido e focado
+                em soluções eficientes, estou à disposição! Entre em contato
+                para conversarmos sobre como posso contribuir para o seu projeto
+                ou equipe.
               </Typography>
 
               <Grid2 size={6} sx={{ background: "" }}>

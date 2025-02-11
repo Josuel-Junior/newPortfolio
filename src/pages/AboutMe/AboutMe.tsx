@@ -32,17 +32,13 @@ export const AboutMe: React.FC = () => {
               mt: "5px",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
-            laboriosam quisquam delectus blanditiis itaque velit, aut animi
-            assumenda rerum quae veniam, a doloremque! Exercitationem blanditiis
-            eaque, laudantium consequatur quae eveniet? Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Consequatur dolor aliquid vel
-            asperiores deleniti dolore sint corporis maiores aut natus eaque,
-            suscipit aliquam iusto ab quas dolorum impedit eos voluptatum. Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Sit ipsum,
-            reiciendis fugiat nesciunt explicabo consequatur vero iusto dolorum
-            adipisci nam ea vel temporibus sunt delectus consequuntur amet.
-            Vero, mollitia nobis.
+            Meu nome é Josuel Junior, sou desenvolvedor full-stack com foco em
+            back-end, formado em Análise e Desenvolvimento de Sistemas. Tenho
+            experiência na integração de APIs RESTful, utilizando TypeScript e
+            frameworks como ReactJS, NextJS e React Native. Buscando aprimorar
+            minhas habilidades, me especializei em back-end com Java e Spring
+            Boot, desenvolvendo APIs robustas e seguras para diversas
+            aplicações.
           </Typography>
         </Slide>
         <Grid2 container maxWidth="md" sx={{ mt: "10px", color: "#fff" }}>

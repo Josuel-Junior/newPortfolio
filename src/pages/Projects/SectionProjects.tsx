@@ -1,14 +1,9 @@
 import { Height } from "@mui/icons-material";
-import {
-  Box,
-  Container,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
-import { Fade} from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import { ShowProjects } from "../../shared/components/ShowProjects";
 import { listProjects } from "../../shared/utils/constants/listProjects";
-
 
 export const Projects: React.FC = () => {
   return (
@@ -31,10 +26,8 @@ export const Projects: React.FC = () => {
         </Fade>
         <Fade>
           <Typography>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            in illo a harum beatae, officia hic minus delectus voluptatum quos
-            esse, modi perspiciatis nihil odit eveniet. Cupiditate voluptate
-            atque nemo?
+            Confira alguns dos projetos que desenvolvi, aplicando tecnologias
+            modernas para criar soluções eficientes e escaláveis.
           </Typography>
         </Fade>
       </Container>
