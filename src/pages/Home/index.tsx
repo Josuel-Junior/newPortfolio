@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { SectionInitial } from "../SectionInitial/SectionInitial";
+import { SectionInitial } from "../pageInitial/SectionInitial";
 import { SectionCloud } from "../AboutCloud/SectionCloud";
 import { AboutMe } from "../AboutMe/AboutMe";
 import { Projects } from "../Projects/SectionProjects";

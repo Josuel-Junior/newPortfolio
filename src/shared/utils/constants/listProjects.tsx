@@ -1,4 +1,3 @@
-import { GitHub } from "@mui/icons-material";
 import banner from "../../../assets/banner.png";
 
 export const listProjects = [

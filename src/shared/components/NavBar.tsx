@@ -80,16 +80,18 @@ export const NavBar: React.FC = () => {
         </Box>
       ) : (
         <Toolbar>
-          <Tabs sx={{ marginLeft: "auto" }}>
-            {navigateDrawer.map((itensMenu: navigateDrawer, index: number) => (
-              <Tab
-                label={itensMenu.page}
-                onClick={() => handleScroll(itensMenu.navigate)}
-                sx={hoverTextNavBar}
-              />
-            ))}
-          </Tabs>
-        </Toolbar>
+  <Tabs sx={{ marginLeft: "auto" }} value={0}>
+    {navigateDrawer.map((itensMenu: navigateDrawer, index: number) => (
+      <Tab
+        key={index}
+        label={itensMenu.page}
+        onClick={() => handleScroll(itensMenu.navigate)}
+        sx={hoverTextNavBar}
+      />
+    ))}
+  </Tabs>
+</Toolbar>
+
       )}
     </AppBar>
   );
