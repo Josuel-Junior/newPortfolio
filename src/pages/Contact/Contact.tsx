@@ -109,10 +109,7 @@ export const Contact: React.FC = () => {
               }}
             >
               <Typography variant="body2" sx={{ my: "15px" }}>
-                Se você está em busca de um desenvolvedor comprometido e focado
-                em soluções eficientes, estou à disposição! Entre em contato
-                para conversarmos sobre como posso contribuir para o seu projeto
-                ou equipe.
+              Se você procura um desenvolvedor comprometido e focado em soluções eficientes, estou pronto para agregar valor à sua equipe! Vamos conversar sobre como posso contribuir para o seu time.
               </Typography>
 
               <Grid2 size={6} sx={{ background: "" }}>

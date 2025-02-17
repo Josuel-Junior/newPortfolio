@@ -20,6 +20,7 @@ export const Light = createTheme({
       paper: "#ffffff",
     },
   },
+  
   typography: {
     fontFamily: [
       "Roboto",
@@ -82,4 +83,5 @@ export const Light = createTheme({
       color: "#4f4f4f",
     },
   },
+  
 });

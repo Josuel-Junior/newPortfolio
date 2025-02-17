@@ -24,8 +24,8 @@ export const Projects: React.FC = () => {
         </Fade>
         <Fade>
           <Typography>
-            Confira alguns dos projetos que desenvolvi, aplicando tecnologias
-            modernas para criar soluções eficientes e escaláveis.
+            Confira alguns dos projetos que desenvolvi, utilizando tecnologias
+            modernas para criar soluções escaláveis.
           </Typography>
         </Fade>
       </Container>
