@@ -40,6 +40,10 @@ export const listFrontEnd = [
     description: "JavaScript e TypeScript",
   },
   {
+    title: "Ferramentas:",
+    description: "ExpoCLI e Visual Studio",
+  },
+  {
     title: "Bibliotecas e Tecnologias:",
     description:
       "DatoCMS, GraphQL, TanStack Query, React Router, Context API, React Hook Form e Zod",

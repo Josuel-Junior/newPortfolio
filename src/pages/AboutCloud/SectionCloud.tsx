@@ -34,7 +34,7 @@ export const SectionCloud: React.FC = () => {
               <Typography sx={{ mt: "10px" }}>
                 Acredito que o conhecimento em computação em nuvem é
                 indispensável para desenvolvedores nos dias de hoje. Pensando
-                nisso, dediquei-me aos estudos para conquistar minha
+                nisso, tirei a
                 certificação{" "}
                 <span style={{ fontWeight: "600", color: "#ff9913" }}>
                   AWS Cloud Practitioner

@@ -19,7 +19,7 @@ export const Home: React.FC = () => {
           actionButton={Scroll}
           titleSecondScreen={"Docker"}
           subTitleSecondScreen={
-            "Utilizo Docker para containerizar aplicações, garantindo portabilidade, escalabilidade e eficiência no desenvolvimento e deployment de sistemas."
+            "Uso Docker para containerizar aplicações, garantindo portabilidade, escalabilidade e eficiência no desenvolvimento e implantação."
           }
         />
       </Box>

@@ -42,10 +42,13 @@ export const ShowProjects: React.FC<IProps> = ({ dataProjects }) => {
                   maxWidth: 345,
                   mx: "auto",
                   borderRadius: "5px",
+                  minHeight:"500px",
+                  display:"flex",flexDirection:"column",
+                  justifyContent:"space-around"
                 }}
               >
                 <CardMedia
-                  sx={{ height: 200 }}
+                  sx={{ height: 220 }}
                   image={data.image}
                   title="green iguana"
                 />
@@ -58,11 +61,11 @@ export const ShowProjects: React.FC<IProps> = ({ dataProjects }) => {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small" href={data.gitHub}>
+                  <Button size="small" href={data.gitHub} target="_blank">
                     <GitHubIcon sx={{ mr: "5px" }} />
                     Github
                   </Button>
-                  <Button size="small" href={data.deploy}>
+                  <Button size="small" href={data.deploy} target="_blank">
                     <OpenInBrowserIcon sx={{ mr: "5px" }} />
                     Deploy
                   </Button>
