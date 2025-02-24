@@ -40,7 +40,7 @@ export const SectionCloud: React.FC = () => {
                   AWS Cloud Practitioner
                 </span>
                 , que marcou meu primeiro passo no universo de serviços em
-                nuvem. Desde então, tenho explorado e testando diversos
+                nuvem. Desde então, tenho explorado e testado diversos
                 serviços da AWS, como
                 <span style={{ fontWeight: "600", color: "#ff9913" }}>
                   {" "}
