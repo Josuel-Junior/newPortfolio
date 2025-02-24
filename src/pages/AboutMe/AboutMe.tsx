@@ -10,7 +10,7 @@ export const AboutMe: React.FC = () => {
     <Box
       id="aboutMe"
       sx={{
-        minHeight: "80vh",
+        minHeight: "100vh",
         width: "100vw",
         background: "#090911",
         display: "flex",
