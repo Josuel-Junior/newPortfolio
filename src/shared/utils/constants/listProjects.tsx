@@ -14,7 +14,7 @@ export const listProjects = [
   {
     title: "Aplição WEB desenvolvida para empresa Clinic Vale",
     description:
-      "Projeto desenvolvido para a empresa Clinic Vale utilizando React.JS e TypeScript, com a integração da API da Meta para exibir postagens em tempo real.",
+      "Aplicação desenvolvido para a empresa Clinic Vale utilizando React.JS e TypeScript, com integração a API da Meta para exibir postagens em tempo real.",
     image: clinic,
     gitHub: "https://github.com/Josuel-Junior/clinicvale",
     deploy: "https://laboratorioclinicvale.com.br/",
