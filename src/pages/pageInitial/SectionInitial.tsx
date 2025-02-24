@@ -8,7 +8,7 @@ import { Parallax, Pagination, Navigation } from "swiper/modules";
 interface IPops {
   title: String;
   subTitle: String;
-  actionButton: () => void;
+  actionButton: (indicePage: string) => void;
   titleSecondScreen: String;
   subTitleSecondScreen: String;
 }
@@ -97,7 +97,7 @@ export const SectionInitial: React.FC<IPops> = ({
               </Typography>
             </Fade>
             <Button
-              onClick={actionButton}
+              onClick={() => actionButton("aboutMe")}
               sx={{
                 fontFamily: "Rubik",
                 backgroundColor: "rgb(255, 255, 255)",

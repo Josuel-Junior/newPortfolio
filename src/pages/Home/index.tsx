@@ -6,7 +6,22 @@ import { Projects } from "../Projects/SectionProjects";
 import { Contact } from "../Contact/Contact";
 
 export const Home: React.FC = () => {
-  const Scroll = () => {};
+
+
+  const handleScroll = (indicePage: string) => {
+    const element = document.getElementById(indicePage);
+    if (element) {
+      const offset = 50;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
 
   return (
     <Box id="home">
@@ -16,7 +31,7 @@ export const Home: React.FC = () => {
           subTitle={
             "Sou desenvolvedor Full Stack com foco em back-end, especializado em Java, Spring Boot e serviços de computação em nuvem da AWS."
           }
-          actionButton={Scroll}
+          actionButton={handleScroll}
           titleSecondScreen={"Docker"}
           subTitleSecondScreen={
             "Uso Docker para containerizar aplicações, garantindo portabilidade, escalabilidade e eficiência no desenvolvimento e implantação."
