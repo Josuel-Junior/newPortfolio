@@ -112,8 +112,8 @@ export const Contact: React.FC = () => {
               Se você procura um desenvolvedor comprometido e focado em soluções eficientes, estou pronto para agregar valor à sua equipe! Vamos conversar sobre como posso contribuir para o seu time.
               </Typography>
 
-              <Grid2 size={6} sx={{ background: "" }}>
-                <Button
+              <Grid2 size={6}>
+                <Button href="https://drive.google.com/file/d/1dUvXaL4OoG7XZhp9SDdOK8Rhtbyp8eBU/view?usp=sharing" target="_blank"
                   sx={{
                     padding: "15px",
                     background: "white",
