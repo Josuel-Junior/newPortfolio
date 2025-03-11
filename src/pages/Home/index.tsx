@@ -29,7 +29,7 @@ export const Home: React.FC = () => {
         <SectionInitial
           title={"Josuel Junior"}
           subTitle={
-            "Sou estudante de Engenharia de Software com experiência em desenvolvimento Full Stack."
+            "Desenvolvedor Full Stack"
           }
           actionButton={handleScroll}
           titleSecondScreen={"Docker"}

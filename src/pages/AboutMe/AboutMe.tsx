@@ -32,12 +32,16 @@ export const AboutMe: React.FC = () => {
               mt: "5px",
             }}
           >
-            Meu nome é Josuel Junior, sou estudante de Engenharia de Software e
-            atualmente estou em busca de uma oportunidade de estágio. Tenho
-            experiência na integração de APIs RESTful utilizando TypeScript,
-            além de frameworks como ReactJS, NextJS e React Native. No back-end,
-            possuo experiência com Java e Spring Boot, desenvolvendo APIs
-            robustas e seguras para diversas aplicações.
+            Olá, sou Josuel Junior, desenvolvedor Full Stack com ampla
+            experiência na criação e integração de soluções modernas e
+            escaláveis. No frontend, trabalho com TypeScript e React.js para
+            construir interfaces dinâmicas e responsivas, garantindo uma
+            experiência de usuário fluida e eficiente. No backend, utilizo Java
+            e Spring Boot para desenvolver APIs RESTful robustas e seguras,
+            sempre focando na performance e escalabilidade das aplicações. Tenho
+            experiência em consumir e integrar APIs, além de adotar boas
+            práticas de desenvolvimento e metodologias ágeis para entregar
+            soluções de alta qualidade.
           </Typography>
         </Slide>
         <Grid2 container maxWidth="md" sx={{ mt: "10px", color: "#fff" }}>
