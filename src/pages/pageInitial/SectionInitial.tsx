@@ -83,10 +83,10 @@ export const SectionInitial: React.FC<IPops> = ({
                 sx={{
                   fontWeight: "400",
                   fontSize: {
-                    xl: 25,
-                    md: 20,
-                    sm: 19,
-                    xs: 18,
+                    xl: 35,
+                    md: 30,
+                    sm: 27,
+                    xs: 25,
                   },
 
                   textAlign: "center",
@@ -107,7 +107,7 @@ export const SectionInitial: React.FC<IPops> = ({
                 "&:hover": {
                   boxShadow: "0 0 8px 5px rgba(255, 255, 255, 0.6)",
                 },
-                padding: "10px",
+                padding: "8px",
               }}
             >
               Sobre mim
