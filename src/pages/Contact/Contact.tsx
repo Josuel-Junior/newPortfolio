@@ -111,25 +111,6 @@ export const Contact: React.FC = () => {
               <Typography variant="body2" sx={{ my: "15px" }}>
               Se você procura um desenvolvedor comprometido e focado em soluções eficientes, estou pronto para agregar valor à sua equipe! Vamos conversar sobre como posso contribuir para o seu time.
               </Typography>
-
-              {/* <Grid2 size={6}>
-                <Button href="https://drive.google.com/file/d/1UqUaLnh800oR79YYNYz6IaBFuGDPo8ds/view?usp=sharing" target="_blank"
-                  sx={{
-                    padding: "15px",
-                    background: "white",
-                    fontFamily: "Rubik",
-                    backgroundColor: "rgb(255, 255, 255)",
-                    boxShadow: "rgb(255, 255, 255) 0px 0px 6px 0px",
-                    color: "rgb(0, 12, 42)",
-                    transition: "box-shadow 300ms ease-in-out",
-                    "&:hover": {
-                      boxShadow: "0 0 8px 5px rgba(255, 255, 255, 0.6)",
-                    },
-                  }}
-                >
-                  Curriculum
-                </Button>
-              </Grid2> */}
             </Grid2>
           </Slide>
         </Container>
