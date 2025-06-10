@@ -32,7 +32,7 @@ export const AboutMe: React.FC = () => {
               mt: "5px",
             }}
           >
-            Olá, sou Josuel Junior, desenvolvedor Full Stack com ampla
+            Olá, meu nome é Josuel Junior, sou desenvolvedor Full Stack com ampla
             experiência na criação e integração de soluções modernas e
             escaláveis. No frontend, trabalho com TypeScript e React.js para
             construir interfaces dinâmicas e responsivas, garantindo uma
